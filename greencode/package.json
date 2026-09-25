@@ -1,0 +1,28 @@
+{
+  "name": "greencode",
+  "version": "1.0.0",
+  "description": "Sistema de gestao de logistica reversa de equipamentos eletronicos (CLI) - greencode",
+  "main": "dist/index.js",
+  "bin": {
+    "greencode": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test:journey": "ts-node tests/journey.ts",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "keywords": ["cli", "logistica-reversa", "e-waste", "typescript"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.4",
+    "ts-node": "^10.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
